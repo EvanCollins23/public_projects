@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="shortcut icon" type="x-icon" href="/images/wc logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Web Components</title>
+</head>
+<body>
+    <script type="module" src="hero-section.js"></script>
+    <script type="module" src="pricing-card.js"></script>
+    <script type="module" src="image-card.js"></script>
+    <script type="module" src="contact-card.js"></script>
+    <header>
+
+        <div class="nav_container">
+            <div id="logo"><a href="#"> Web Components</a></div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#team">The Team</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="sign-in.html">Sign In</a></li>
+                    </ul>
+                </nav>
+        </div>
+
+            <div class="horizontal_container">
+                <div class="horizontal_links">
+                    <a href="#">Home</a>
+                    <a href="#products">Products</a>
+                    <a href="#team">The Team</a>
+                    <a href="#about">About</a>
+                    <a href="sign-in.html">Sign In</a>
+                    </ul>
+                </div>
+            </div>
+
+            
+    </header>
+
+    <hero-section img-src="/images/banner.svg">
+        <span slot="slogan">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+    </hero-section>
+
+
+    <div class="master_container" id="products">
+        
+        <h1>Lorem, ipsum dolor.</h1>
+        <div class="pricing_container">
+            <pricing-card style="--list-style-image: url('images/check.svg');">
+                <span slot="name">Item 1</span>
+                <span slot="pitch">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aliquam!</span>
+                <span slot="price">$99</span>
+                <span slot="time">year</span>
+                <span slot="feature_1">Feature 1</span>
+                <span slot="feature_2">Feature 2</span>
+                <span slot="feature_3">Feature 3</span>
+                <span slot="feature_4"></span>
+                <span slot="feature_5"></span>              
+            </pricing-card>
+
+            <pricing-card style="--list-style-image: url('images/check.svg');">
+                <span slot="name">Item 2</span>
+                <span slot="pitch">I am going to type a random sentence with the pitch of this product that is this many words long</span>
+                <span slot="price">$500</span>
+                <span slot="time">year</span>
+                <span slot="feature_1">Feature 1</span>
+                <span slot="feature_2">Feature 2</span>
+                <span slot="feature_3">Feature 3</span>
+                <span slot="feature_4">Feature 4</span>
+                <span slot="feature_5"></span>              
+            </pricing-card>
+
+            
+            <pricing-card style="--list-style-image: url('images/check.svg');">
+                <span slot="name">Item 3</span>
+                <span slot="pitch">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, vero.</span>
+                <span slot="price">$1000</span>
+                <span slot="time">year</span>
+                <span slot="feature_1">Feature 1</span>
+                <span slot="feature_2">Feature 2</span>
+                <span slot="feature_3">Feature 3</span>
+                <span slot="feature_4">Feature 4</span>
+                <span slot="feature_5">Feature 5</span>              
+            </pricing-card>
+        </div>
+    </div>
+
+    <div class="master_container" id="about">
+        
+        <h1> Accusantium laboriosam qui.</h1>
+        <div class="container_1">
+            <p id="paragraph_1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laboriosam qui repudiandae odio quas, deserunt officia aliquam placeat soluta culpa provident, exercitationem nam veritatis et, iste numquam vero! Dicta, porro.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laboriosam qui repudiandae odio quas, deserunt officia aliquam placeat soluta culpa provident, exercitationem nam veritatis et, iste numquam vero!
+            </p>
+            <div id="card_container">
+                <image-card img-src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/purple-mountains-abstract-minimalist-landscape-matthias-hauser.jpg">
+                    <span slot="caption">Lorem ipsum dolor sit amet.</span>
+                </image-card>
+            </div>
+        </div>
+    </div>
+
+    <div class="master_container" id="team">
+        
+        <h1> Accusantium laboriosam qui.</h1>
+        <div class="container_2">
+                <div class="card_grid">
+                    <contact-card>
+                        <span slot="name">Gustavo Fring</span>
+                        <span slot="title">C.E.O.</span>
+                        <span slot="bio">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum reprehenderit voluptas, sunt in quae animi soluta maiores rerum cumque esse optio? Iusto, necessitatibus! Reprehenderit dolore quia voluptatibus numquam esse vitae!</span>
+                    </contact-card>
+
+                    <contact-card>
+                        <span slot="name">Walter White</span>
+                        <span slot="title">Vice President</span>
+                        <span slot="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dicta ratione alias esse dolor, doloremque, iste mollitia amet rem delectus corporis dolores earum ad unde!</span>
+                    </contact-card>
+
+                    <contact-card>
+                        <span slot="name">Jesse Pinkman</span>
+                        <span slot="title">Chief Operating Officer</span>
+                        <span slot="bio">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam obcaecati asperiores voluptatibus alias? Sapiente modi, veritatis a sunt fuga molestias.</span>
+                    </contact-card>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container_3" id="about">
+        
+        <h1> Accusantium laboriosam qui.</h1>
+        <div class="container_1">
+            <div id="card_container">
+                <image-card img-src="/images/image_2.svg">
+                    <span slot="caption">Lorem ipsum dolor sit amet...</span>
+                </image-card>
+            </div>
+
+            <p id="paragraph_1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laboriosam qui repudiandae odio quas, deserunt officia aliquam placeat soluta culpa provident, exercitationem nam veritatis et, iste numquam vero! Dicta, porro.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laboriosam qui repudiandae odio quas, deserunt officia aliquam placeat soluta culpa provident, exercitationem nam veritatis et, iste numquam vero!
+            </p>
+        </div>
+
+        <div class="container_1">
+            <p id="paragraph_1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laboriosam qui repudiandae odio quas, deserunt officia aliquam placeat soluta culpa provident, exercitationem nam veritatis et, iste numquam vero! Dicta, porro.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laboriosam qui repudiandae odio quas, deserunt officia aliquam placeat soluta culpa provident, exercitationem nam veritatis et, iste numquam vero!
+            </p>
+            <div id="card_container">
+                <image-card img-src="/images/image_1.svg">
+                    <span slot="caption">Lorem ipsum dolor sit amet.</span>
+                </image-card>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+

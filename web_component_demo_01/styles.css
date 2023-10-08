@@ -1,0 +1,534 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #212121;
+    margin: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    font-size: 5em;
+    margin-bottom: 1em;
+}
+
+p {
+    text-align: center;
+    font-size: 2em;
+    max-width: 30ch;
+}
+
+header {
+    background-color: #111111;
+}
+
+header::after {
+    content: ' ';
+    display: table;
+    clear:both;
+}
+
+nav {
+    float: right;
+    margin-right: 5%;
+}
+
+nav ul {
+    font-size: 2em;
+    margin: 0;
+    list-style: none;
+}
+
+nav ol {
+    font-size: 2em;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+contact-card {
+    font-size: 15px;
+    margin: 1.5em;
+}
+
+image-card {
+    font-size: 14px;
+}
+
+pricing-card {
+    font-size: 14px;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 3em;
+    padding-top: 1.9em;
+    transition: transform 0.3s ease;
+}
+
+.nav-links li:hover {
+    transform:translateY(-5%)
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: #111111;
+}
+
+::-webkit-scrollbar-thumb{
+    background:hsl(0, 0%, 25%);
+    border-radius: 10px;
+}
+
+#logo {
+    float:left;
+    margin-left: 5%;
+    font-size: 4em;
+    padding: 0.6em 0;
+    text-decoration: none;
+    text-underline-offset: 0.25em;
+}
+
+nav a {
+    padding: 0.25em;
+    outline: solid 0em;
+    text-decoration: none;
+    text-underline-offset: 0.25em;
+    position: relative;
+    text-decoration: none;
+}
+
+nav a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #BB86FC;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav_container a:hover::before {
+    transform: scaleX(1);
+}
+
+#logo a {
+    padding: 0.25em;
+    outline: solid 0em;
+    text-decoration: none;
+    text-underline-offset: 0.25em;
+    position: relative;
+    text-decoration: none;
+}
+
+#logo a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #BB86FC;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+#logo a:hover::before {
+    transform: scaleX(1);
+}
+
+.horizontal_links {
+    display: none;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 2em;
+    margin-left: 18%;
+}
+
+.horizontal_links a {
+    font-size: 2em;
+    padding: 1em;
+}
+
+.horizontal_links a {
+    outline: solid 0em;
+    text-decoration: none;
+    text-underline-offset: 0.25em;
+    position: relative;
+    text-decoration: none;
+}
+
+.horizontal_links a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #BB86FC;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+.horizontal_links a:hover::before {
+    transform: scaleX(1);
+}
+
+.horizontal_links li:hover {
+    transform:translateY(-5%)
+}
+
+.master_container {
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+.container_1 {
+    text-align: center;
+    background-color:#111111;
+    border-radius: 3em;
+    margin-top: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.container_2 {
+    padding: 3em;
+    text-align: center;
+    border-radius: 3em;
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+}
+
+.container_3 {
+    padding: 1em;
+    text-align: center;
+    border-radius: 3em;
+    background-color:#111111;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.pricing_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card_grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5em;
+}
+
+#card_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#title {
+    font-size: 2em;
+}
+
+#paragraph_1 {
+    margin-left: 2em;
+}
+
+@media (max-width: 1670px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav ul {
+        font-size: 1.5em;
+        padding-top: 1em;
+    }
+
+    contact-card {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    image-card {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 1487px) {
+    nav {
+        text-align: center;
+        float:none;
+    }
+
+    pricing-card {
+        font-size: 12px;
+    }
+
+    contact-card {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 1346px) {
+    nav ul {
+        font-size: 1.4em;
+        padding-top: 0.9em;
+    }
+
+    .card_grid {
+        gap: 2.5em;
+    }
+
+    .container_2 {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 1291px) {
+    nav ul {
+        padding-top: 0.12em;
+    }
+
+    image-card {
+        font-size: 11px;
+    }
+
+    body {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    #logo {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 1200px) {
+    body{
+        font-size: 12px;
+    }
+
+    pricing-card {
+        font-size: 11px;
+    }
+
+    contact-card {
+        font-size: 11px;
+    }
+
+    image-card {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1100px) {
+    body{
+        font-size: 11px;
+    }
+
+    pricing-card {
+        font-size: 10px;
+    }
+
+    contact-card {
+        font-size: 9px;
+    }
+
+    image-card {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 950px) {
+    body{
+        font-size: 9px;
+    }
+
+    pricing-card {
+        font-size: 8px;
+    }
+
+    contact-card {
+        font-size: 9px;
+    }
+
+    image-card {
+        font-size: 8.5px;
+    }
+
+    .container_1 {
+        padding: 1em;
+    }
+}
+
+@media (max-width: 900px) {
+    contact-card {
+        font-size: 8px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    body {
+        font-size: 8px;
+    }
+
+    pricing-card {
+        font-size: 7px;
+    }
+
+    contact-card {
+        font-size: 7px;
+    }
+
+    image-card {
+        font-size: 7px;
+    }
+}
+
+@media (max-width: 750px) {
+    body {
+        font-size: 8px;
+    }
+
+    pricing-card {
+        font-size: 6.5px;
+    }
+
+    contact-card {
+        font-size: 7px;
+    }
+
+    image-card {
+        font-size: 7px;
+    }
+
+    .card_grid {
+        gap: 1em;
+    }   
+}
+
+@media (max-width: 650px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo {
+        font-size: 5em;
+    }
+
+    .horizontal_links {
+        display: inline-flex; 
+    }
+
+    pricing-card {
+        font-size: 5px;
+    }
+
+    contact-card {
+        font-size: 5.5px;
+    }
+
+    image-card {
+        font-size: 7px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .horizontal_container {
+        margin-left: -4em;
+    }
+
+    .pricing_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card_grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    pricing-card {
+        font-size: 10px;
+        padding:1em;
+    }
+
+    contact-card {
+        font-size: 10px;
+        padding: 1em;
+    }
+
+    image-card {
+        font-size: 7px;
+    }
+
+    .master_container {
+        margin-right: 1.75em;
+    }
+
+    .container_3 {
+        margin-right: 6em;
+    }
+
+}
+
+@media (max-width: 545px) {
+    image-card {
+        font-size: 6px;
+        padding: 2em;
+
+    }
+}
+
+@media (max-width: 505px) {
+    body {
+        font-size: 7px;
+    }
+
+    image-card {
+        font-size: 5px;
+        padding: -10em;
+
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 6.5px;
+    }
+}

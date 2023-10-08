@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="838px" height="1120.5281px" viewBox="0 0 838 1120.5281" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L417.809 0L417.809 288.918L0 288.918L0 0Z" id="path_1" />
+  </defs>
+  <g id="Rectangle">
+    <use xlink:href="#path_1" fill="none" stroke="#111111" stroke-width="0" />
+    <use stroke="none" fill="#111111" xlink:href="#path_1" fill-rule="evenodd" />
+  </g>
+  <path d="M417.803 0L832.8 383.201L830.538 1114.94L3.37512 1114.94L2.73657 382.679L417.803 0Z" id="Polygon" fill="#C291FE" fill-rule="evenodd" stroke="none" />
+  <path d="M419 0L838 1118.13L0 1118.13L419 0Z" id="Triangle" fill="#2F2F2F" fill-rule="evenodd" stroke="none" />
+  <path d="M0 1120.53L419 1120.53L0 2.39441L0 1120.53Z" id="Triangle-2" fill="#26202E" fill-rule="evenodd" stroke="none" />
+  <path d="M837.999 1118.13L837.999 -0.00268555L413.99 0L837.999 1118.13Z" id="Triangle-3" fill="#212121" fill-rule="evenodd" stroke="none" />
+</svg>
